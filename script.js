@@ -22,7 +22,7 @@ getGrid();
 const button = document.querySelector('#button');
 
 button.addEventListener('click', () => {
-    container.innerHTML = '';
+    container.textContent = '';
     const size = Number(prompt());
     getGrid(size);
     const pixelSize = 960 / size;
